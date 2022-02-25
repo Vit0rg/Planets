@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planets</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <div id="container">
+      <header></header>
+      
+      <section class="planeta Mercury" onclick="setInfo(me)"> 
+        <span> 
+          Name: Mercury<br>
+          Natural satelites: None<br>
+          Orbital speed: 47.36 km/s<br>
+          Mean radius: 2,439.7 km<br>
+          Volume: 6.08 × 10^10 km^3<br>
+          Mass: 3.30 × 10^23 kg<br>
+          Surface gravity: 3.7 m/s^2
+        </span>
+        <span>
+          Mercury is the smallest planet in the Solar System 
+          and the closest to the Sun. Its orbit around the Sun 
+          takes 87.97 Earth days, the shortest of all the Sun's planets.
+        </span>  
+      </section>
+      <!--2.439KM-->
+      <section class="planeta Venus" onclick="setInfo(ve)"> 
+        <span> 
+          Name: Venus<br>
+          Natural satelites: None<br>
+          Orbital speed: 35.02 km/s<br>
+          Mean radius: 6,051 km<br>
+          Volume: 9.28 × 10^11 km^3<br>
+          Mass: 4.87 × 10^24 kg<br>
+          Surface gravity: 8.87 m/s^2
+        </span>
+        <span>
+          Venus is the second planet from the Sun. 
+          It is named after the Roman goddess of love and beauty. 
+          As the brightest natural object in Earth's night sky after the Moon,
+          Venus can cast shadows and can be visible to the naked eye in broad daylight.
+        </span>
+      </section>
+      <!--6.051KM-->
+      <section class="planeta Earth" onclick="setInfo(ea)">
+        <span> 
+          Name: Earth<br>
+          Natural satelites: 1 (Moon)<br>
+          Orbital speed: 29.78 km/s<br>
+          Mean radius: 6371 km<br>
+          Volume: 1.08 × 10^12 km^3<br>
+          Mass: 5.97 × 10^24 kg<br>
+          Surface gravity: 9.81 m/s^2
+        </span>
+        <span>
+          Earth is the third planet from the Sun and the only astronomical
+          object known to harbor life. While large amounts of water can 
+          be found throughout the Solar System, only Earth sustains 
+          liquid surface water.
+        </span>
+      </section> 
+      <!--6.378KM-->
+      <section class="planeta Mars" onclick="setInfo(ma)">
+        <span> 
+          Name: Mars<br>
+          Natural satelites: 2<br>
+          Orbital speed: 24.01 km/s<br>
+          Mean radius: 3389.5 km<br>
+          Volume: 1.63 × 10^11 km^3<br>
+          Mass: 6.42 × 10^23 kg<br>
+          Surface gravity: 3.7 m/s^2
+        </span>
+        <span>
+          Mars is the fourth planet from the Sun and the second-smallest planet
+          in the Solar System, being larger than only Mercury.
+          In English, Mars carries the name of the Roman god of war 
+          and is often referred to as the "Red Planet"
+        </span>
+      </section> 
+      <!--3.397KM-->
+      <section id="CinturaoDeAsteroides">        
+      </section>
+      <section class="planeta Jupiter" onclick="setInfo(ju)">
+      <span> 
+          Name: Jupiter<br>
+          Natural satelites: 80 (known)<br>
+          Orbital speed: 13.07 km/s<br>
+          Mean radius: 69,911 km<br>
+          Volume: 1.43 × 10^15 km^3<br>
+          Mass: 1.90 × 10^27 kg<br>
+          Surface gravity: 24.79 m/s^2
+        </span>
+        <span>
+          Jupiter is the fifth planet from the Sun and the largest in the Solar
+          System. It is a gas giant with a mass more than two and a half times that
+          of all the other planets in the Solar System combined, but slightly less
+          than one-thousandth the mass of the Sun.
+        </span>
+      </section>
+      <!--71.492KM-->
+      <section class="planeta Saturn" onclick="setInfo(sa)">
+      <span> 
+          Name: Saturn<br>
+          Natural satelites: 83 (formal)<br>
+          Orbital speed: 9.68 km/s<br>
+          Mean radius: 58,232 km<br>
+          Volume: 8.27 × 10^14 km^3<br>
+          Mass: 5.68 × 10^26 kg<br>
+          Surface gravity: 10.44 m/s^2
+        </span>
+        <span>
+          Saturn is the sixth planet from the Sun and the second-largest in the
+          Solar System, after Jupiter. It is a gas giant with an average radius
+          of about nine and a half times that of Earth.
+        </span>
+      </section>
+      <!--60.268KM-->
+      <section class="planeta Uranus" onclick="setInfo(ur)">
+      <span> 
+          Name: Uranus<br>
+          Natural satelites: 27 (known)<br>
+          Orbital speed: 6.80 km/s<br>
+          Mean radius: 25,362 km<br>
+          Volume: 6.83 × 10^13 km^3<br>
+          Mass: 8.68 × 10^25 kg<br>
+          Surface gravity: 8.69 m/s^2
+        </span>
+        <span>
+          Uranus is the seventh planet from the Sun. Its name is a reference to
+          the Greek god of the sky, Uranus, who, according to Greek mythology,
+          was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) 
+          and father of Cronus (Saturn).
+        </span>
+      </section>
+      <!--51.108KM-->
+      <section class="planeta Neptune" onclick="setInfo(ne)">
+      <span> 
+          Name: Neptune<br>
+          Natural satelites: 14 (known)<br>
+          Orbital speed: 5.43 km/s<br>
+          Mean radius: 24,622 km<br>
+          Volume: 6.25 × 10^13 km^3<br>
+          Mass: 1.02 × 10^26 kg<br>
+          Surface gravity: 11.15 m/s^2
+        </span>
+        <span>
+          Neptune is the eighth and farthest-known Solar planet from the Sun. 
+          In the Solar System, it is the fourth-largest planet by diameter,
+          the third-most-massive planet, and the densest giant planet.
+        </span>
+      </section>
+      <!--49.538KM-->
+      <footer></footer>
+  </div>
+</body>
+</html>

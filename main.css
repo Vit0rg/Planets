@@ -1,0 +1,226 @@
+*:root
+{
+  --roxo: 280, 20%, 5%;
+  --amarelo: 60, 100%, 40%;
+  --terra: 75px;
+}
+
+*, *::after, ::before
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body
+{
+  min-height: 900vh;
+  background: hsl(var(--roxo)) url("./img/Espaço.jpg");
+  background-blend-mode: color-dodge;
+  color: hsl(var(--amarelo));
+  font-size: 16px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  width: 100%;
+}
+
+header
+{
+  background: url("./img/Sol.png") bottom no-repeat;
+  background-size: 100%;
+  background-blend-mode: color-burn;
+  height: 375px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#container
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  animation: atividade-solar 5s infinite linear alternate-reverse;
+}
+
+footer
+{
+  height: 90vh;
+  width: 100%;
+  background: hsla(0, 0%, 0%, 5%) url("./img/Cinturão_de_Asteroides.png");
+  background-repeat: repeat-x;
+  filter: drop-shadow();
+}
+
+.planeta
+{
+  font-size: 0em;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100vw;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%);
+}
+
+.planeta:hover
+{
+  filter: brightness(110%) contrast(150%);
+  cursor: pointer;
+}
+
+.Mercury
+{
+  /*0.38*/
+  width: calc(0.38 * var(--terra));
+  height: calc(0.38 * var(--terra));
+  background-image: url("./img/Mercúrio.png");
+}
+
+.Venus
+{
+  /*0.95*/
+  width: calc(0.95 * var(--terra));
+  height: calc(0.95 * var(--terra));
+  background-image: url("./img/Vênus.png");
+}
+
+.Earth
+{
+  /*1*/
+  height: var(--terra);
+  width: var(--terra);
+  background-image: url("./img/Terra.png");
+}
+
+.Mars
+{
+  /*0.53*/
+  height: calc(0.53 * var(--terra));
+  width: calc(0.53 * var(--terra));
+  background-image: url("./img/Marte.png");
+}
+
+#CinturaoDeAsteroides
+{
+  width: 100%;
+  height: 200px;
+  margin: 50px 0;
+  background-image: url("./img/Cinturão_de_Asteroides.png");
+  background-size: contain;
+  filter: drop-shadow();
+}
+
+.Jupiter
+{
+  /*11.21*/
+  height: calc(11.21 * var(--terra));
+  width: calc(11.21 * var(--terra));
+  background-size: 137%;
+  background-image: url("./img/Júpiter.png");
+  max-width: 100%;
+  box-shadow: none;
+}
+
+.Saturn
+{
+  /*9.45*/
+  height: calc(9.45 * var(--terra));
+  width: calc(9.45 * var(--terra)*1.75);
+  background-image: url("./img/Saturno.png");
+  max-width: 100%;
+  box-shadow: none;
+}
+
+.Uranus
+{
+  /*8.01*/
+  height: calc(8.01 * var(--terra));
+  width: calc(8.01 * var(--terra));
+  background-image: url("./img/Urano.png");
+  background-size: contain;
+  max-width: 100%;
+  box-shadow: none;
+}
+
+.Neptune
+{
+  /*7.77*/
+  height: calc(7.77 * var(--terra));
+  width: calc(7.77 * var(--terra));
+  background-image: url("./img/Netuno.png");
+  max-width: 100%;
+  box-shadow: none;
+}
+
+.info
+{
+  height: fit-content;
+  padding: 2%;
+  width: 95vw;
+  border-radius: 50px;
+  background-color: hsla(282, 100%, 5%, 95%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 1.2em;
+  box-shadow: 2px 2px 3px hsl(var(--amarelo));
+  letter-spacing: .01em;
+  margin-bottom: 30px;
+}
+
+.info:hover
+{
+  filter: unset;
+  filter: unset;
+  cursor: unset;
+}
+
+.info span
+{
+  padding: 15px 4%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  line-height: 1.5em;
+}
+
+@keyframes atividade-solar
+{
+  0%
+  {
+    filter: brightness(90%);
+  }
+  100%
+  {
+    filter: brightness(100%); 
+    background-color: hsla(0, 0%, 100%, 0.04);
+  }
+}
+
+@media screen and (max-width: 780px)
+{
+  body
+  {
+    height: 200vh;
+  }
+
+  header
+  {
+    height: 175px;
+  }
+
+  .info
+  {
+    background-blend-mode: soft-light;
+    font-size: 1em;
+  }  
+}
