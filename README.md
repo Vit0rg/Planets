@@ -6,11 +6,11 @@ Solar system model focused on the planets
 Author's page created based on studies about sizes, filters, and colors on CSS3, and DOM manipulation with JS.
 
 ## Available at:
-[Github-page] (https://vit0rg.github.io/Planets/) 
+[Github-page](https://vit0rg.github.io/Planets/) 
 
 ## Technologies used: 
 > Front end: 
-HTML5 / CSS3 / JS (ES7) 
+HTML5 / CSS3 / JS (ES7)
 
 ## Author: 
 Vit0rg 
