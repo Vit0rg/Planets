@@ -211,6 +211,7 @@ footer
   body
   {
     height: 200vh;
+    background-color: hsl(280, 100%, 7%);
   }
 
   header
